@@ -1,7 +1,7 @@
 -- Tabla Temporal Compra
 CREATE TABLE Temp1 (
     -- Compra
-    Fecha NVARCHAR(16),
+    Fecha NVARCHAR(64),
     -- Proveedor
     CodProveedor NVARCHAR(64), --  1
     NombreProveedor NVARCHAR(512), --  2
@@ -9,12 +9,12 @@ CREATE TABLE Temp1 (
     NumeroProveedor NVARCHAR(32), --  4
     WebProveedor NVARCHAR(16), --  5
     -- Producto
-    CodProducto NVARCHAR(16), -- 1
+    CodProducto NVARCHAR(64), -- 1
     NombreProducto NVARCHAR(256), -- 2
     MarcaProducto NVARCHAR(256), -- 3
     Categoria NVARCHAR(32), -- 4
     -- Sucursal
-    SodSuSursal NVARCHAR(16), -- 1
+    SodSuSursal NVARCHAR(64), -- 1
     NombreSucursal NVARCHAR(32), -- 2
     DireccionSucursal NVARCHAR(1024), -- 3
     Region NVARCHAR(32), -- 4
@@ -39,12 +39,12 @@ CREATE TABLE Temp2 (
     NombreVendedor NVARCHAR(128), -- 2
     Vacacionista NVARCHAR(8), -- 3
     -- Producto
-    CodProducto NVARCHAR(16), -- 1
+    CodProducto NVARCHAR(64), -- 1
     NombreProducto NVARCHAR(256), -- 2
     MarcaProducto NVARCHAR(256), -- 3
     Categoria NVARCHAR(32), -- 4
     -- Sucursal
-    SodSuSursal NVARCHAR(16), -- 1
+    SodSuSursal NVARCHAR(64), -- 1
     NombreSucursal NVARCHAR(32), -- 2
     DireccionSucursal NVARCHAR(1024), -- 3
     Region NVARCHAR(32), -- 4
