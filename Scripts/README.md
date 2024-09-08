@@ -2,7 +2,7 @@
 ### Cliente
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Codigo` | `INT` |
+| 1 | `PK` `Codigo` | `Codigo NVARCHAR(64)` |
 | 2 | `Nombre` | `NVARCHAR(128)` |
 | 3 | `Direccion` | `NVARCHAR(1024)` |
 | 4 | `Numero` | `INT` |
@@ -10,14 +10,14 @@
 ### Producto
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Codigo` | `INT` |
+| 1 | `PK` `Codigo` | `Codigo NVARCHAR(64)` |
 | 2 | `Nombre` | `NVARCHAR(256)` |
 | 3 | `Marca` | `NVARCHAR(256)` |
 | 4 | `Categoria` | `NVARCHAR(32)` |
 ### Proveedor
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Codigo` | `INT` |
+| 1 | `PK` `Codigo` | `Codigo NVARCHAR(64)` |
 | 2 | `Nombre` | `NVARCHAR(512)` |
 | 3 | `Direccion` | `NVARCHAR(1024)` |
 | 4 | `Numero` | `INT` |
@@ -25,7 +25,7 @@
 ### Sucursal
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Codigo` | `INT` |
+| 1 | `PK` `Codigo` | `Codigo NVARCHAR(64)` |
 | 2 | `Nombre` | `NVARCHAR(32)` |
 | 3 | `Direccion` | `NVARCHAR(1024)` |
 | 4 | `Region` | `NVARCHAR(32)` |
@@ -33,27 +33,25 @@
 ### Vendedor
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Codigo` | `INT` |
+| 1 | `PK` `Codigo` | `Codigo NVARCHAR(64)` |
 | 2 | `Nombre` | `NVARCHAR(128)` |
 | 3 | `Vacacionista` | `INT` |
 ### Compra
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Id` | `INT` |
-| 2 | `Fecha` | `Date` |
-| 3 | `Unidades` | `INT` |
-| 4 | `CostoUnitario` | `FLOAT` |
-| 5 | `FK` `CodProveedor` | `INT` |
-| 6 | `FK` `CodProducto` | `INT` |
-| 7 | `FK` `CodSucursal` | `INT` |
+| 1 | `Fecha` | `Date` |
+| 2 | `Unidades` | `INT` |
+| 3 | `CostoUnitario` | `FLOAT` |
+| 4 | `FK` `CodProveedor` | `NVARCHAR(64)` |
+| 5 | `FK` `CodProducto` | `NVARCHAR(64)` |
+| 6 | `FK` `CodSucursal` | `NVARCHAR(64)` |
 ### Venta
 | No | Campo | Tipo |
 | - | - | - |
-| 1 | `PK` `Id` | `INT` |
-| 2 | `Fecha` | `Date` |
-| 3 | `Unidades` | `INT` |
-| 4 | `PrecioUnitario` | `FLOAT` |
-| 5 | `FK` `CodCliente` | `INT` |
-| 6 | `FK` `CodVendedor` | `INT` |
-| 7 | `FK` `CodProducto` | `INT` |
-| 8 | `FK` `CodSucursal` | `INT` |
+| 1 | `Fecha` | `Date` |
+| 2 | `Unidades` | `INT` |
+| 3 | `PrecioUnitario` | `FLOAT` |
+| 4 | `FK` `CodCliente` | `NVARCHAR(64)` |
+| 5 | `FK` `CodVendedor` | `NVARCHAR(64)` |
+| 6 | `FK` `CodProducto` | `NVARCHAR(64)` |
+| 7 | `FK` `CodSucursal` | `NVARCHAR(64)` |
