@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.seminario22_201908355"
+  DTS:DTSID="{21BE734E-0176-4FEE-B591-73FDF853AE89}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=seminario22_201908355;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-ETL-{21BE734E-0176-4FEE-B591-73FDF853AE89}localhost.seminario22_201908355;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
