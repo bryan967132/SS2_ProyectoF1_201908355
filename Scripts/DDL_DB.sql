@@ -1,55 +1,55 @@
 -- Tabla Temporal Compra
 CREATE TABLE Temp1 (
     -- Compra
-    Fecha VARCHAR(16),
+    Fecha NVARCHAR(16),
     -- Proveedor
-    CodProveedor VARCHAR(64), --  1
-    NombreProveedor VARCHAR(512), --  2
-    DireccionProveedor VARCHAR(1024), --  3
-    NumeroProveedor VARCHAR(32), --  4
-    WebProveedor VARCHAR(16), --  5
+    CodProveedor NVARCHAR(64), --  1
+    NombreProveedor NVARCHAR(512), --  2
+    DireccionProveedor NVARCHAR(1024), --  3
+    NumeroProveedor NVARCHAR(32), --  4
+    WebProveedor NVARCHAR(16), --  5
     -- Producto
-    CodProducto VARCHAR(16), -- 1
-    NombreProducto VARCHAR(256), -- 2
-    MarcaProducto VARCHAR(256), -- 3
-    Categoria VARCHAR(32), -- 4
+    CodProducto NVARCHAR(16), -- 1
+    NombreProducto NVARCHAR(256), -- 2
+    MarcaProducto NVARCHAR(256), -- 3
+    Categoria NVARCHAR(32), -- 4
     -- Sucursal
-    SodSuSursal VARCHAR(16), -- 1
-    NombreSucursal VARCHAR(32), -- 2
-    DireccionSucursal VARCHAR(1024), -- 3
-    Region VARCHAR(32), -- 4
-    Departamento VARCHAR(32), -- 5
+    SodSuSursal NVARCHAR(16), -- 1
+    NombreSucursal NVARCHAR(32), -- 2
+    DireccionSucursal NVARCHAR(1024), -- 3
+    Region NVARCHAR(32), -- 4
+    Departamento NVARCHAR(32), -- 5
     -- Compra
-    Unidades VARCHAR(16),
-    CostoU VARCHAR(16)
+    Unidades NVARCHAR(16),
+    CostoU NVARCHAR(16)
 );
 
 -- Tabla Temporal Venta
 CREATE TABLE Temp2 (
     -- Venta
-    Fecha VARCHAR(16),
+    Fecha NVARCHAR(16),
     -- Cliente
-    CodigoCliente VARCHAR(64), -- 1
-    NombreCliente VARCHAR(128), -- 2
-    TipoCliente VARCHAR(16), -- 3
-    DireccionCliente VARCHAR(1024), -- 4
-    NumeroCliente VARCHAR(32), -- 5
+    CodigoCliente NVARCHAR(64), -- 1
+    NombreCliente NVARCHAR(128), -- 2
+    TipoCliente NVARCHAR(16), -- 3
+    DireccionCliente NVARCHAR(1024), -- 4
+    NumeroCliente NVARCHAR(32), -- 5
     -- Vendedor
-    CodVendedor VARCHAR(64), -- 1
-    NombreVendedor VARCHAR(128), -- 2
-    Vacacionista VARCHAR(8), -- 3
+    CodVendedor NVARCHAR(64), -- 1
+    NombreVendedor NVARCHAR(128), -- 2
+    Vacacionista NVARCHAR(8), -- 3
     -- Producto
-    CodProducto VARCHAR(16), -- 1
-    NombreProducto VARCHAR(256), -- 2
-    MarcaProducto VARCHAR(256), -- 3
-    Categoria VARCHAR(32), -- 4
+    CodProducto NVARCHAR(16), -- 1
+    NombreProducto NVARCHAR(256), -- 2
+    MarcaProducto NVARCHAR(256), -- 3
+    Categoria NVARCHAR(32), -- 4
     -- Sucursal
-    SodSuSursal VARCHAR(16), -- 1
-    NombreSucursal VARCHAR(32), -- 2
-    DireccionSucursal VARCHAR(1024), -- 3
-    Region VARCHAR(32), -- 4
-    Departamento VARCHAR(32), -- 5
+    SodSuSursal NVARCHAR(16), -- 1
+    NombreSucursal NVARCHAR(32), -- 2
+    DireccionSucursal NVARCHAR(1024), -- 3
+    Region NVARCHAR(32), -- 4
+    Departamento NVARCHAR(32), -- 5
     -- Venta
-    Unidades VARCHAR(16),
-    PrecioUnitario VARCHAR(16)
+    Unidades NVARCHAR(16),
+    PrecioUnitario NVARCHAR(16)
 );
